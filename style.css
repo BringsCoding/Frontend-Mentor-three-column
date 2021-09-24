@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-background-color: hsl(0, 0%, 95%);
+  --background-color-card-one: hsl(31, 77%, 52%);
+  --background-color-card-two: hsl(184, 100%, 22%);
+  --background-color-card-three: hsl(179, 100%, 13%);
+  --button-active-color: hsl(0, 0%, 42%);
+}
+html {
+  background-color: var(--main-background-color);
+  font-size: 15px;
+  color: aliceblue;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.flexbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-box:nth-child(1) {
+  background-color: var(--background-color-card-one);
+  width: 275px;
+  height: 450px;
+  padding-left: 45px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.flex-box:nth-child(2) {
+  background-color: var(--background-color-card-two);
+  width: 275px;
+  height: 450px;
+  padding-left: 45px;
+}
+.flex-box:nth-child(3) {
+  background-color: var(--background-color-card-three);
+  width: 275px;
+  height: 450px;
+  padding-left: 45px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.flex-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 45px;
+}
+
+.button-one {
+  color: var(--background-color-card-one);
+}
+
+.button-two {
+  color: var(--background-color-card-two);
+}
+
+.button-two {
+  color: var(--background-color-card-three);
+}
+.flex-icons > button {
+  height: 45px;
+  width: 135px;
+  margin-top: 30px;
+  border-radius: 20px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #f0f8ff;
+  outline: none;
+  border-color: transparent;
+  position: relative;
+  top: 40px;
+}
+
+.flex-icons > button:active {
+  background-color: var(--button-active-color);
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  line-height: 1.6em;
+  padding-bottom: 10px;
+  position: relative;
+  top: 35px;
+  padding-right: 34px;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 35px;
+  font-size: 35px;
+}
+
+@media screen and (max-width: 642px) {
+  .flexbox-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+  }
+  .flex-box:nth-child(1) {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+  }
+  .flex-box:nth-child(3) {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0px;
+  }
+}
