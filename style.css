@@ -14,7 +14,7 @@
 }
 html {
   background-color: var(--main-background-color);
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: aliceblue;
   min-height: 100vh;
   display: grid;
@@ -29,24 +29,24 @@ html {
 
 .flex-box:nth-child(1) {
   background-color: var(--background-color-card-one);
-  width: 275px;
-  height: 450px;
-  padding-left: 45px;
+  width: 17.1875rem;
+  height: 28.125rem;
+  padding-left: 2.8125rem;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
 
 .flex-box:nth-child(2) {
   background-color: var(--background-color-card-two);
-  width: 275px;
-  height: 450px;
-  padding-left: 45px;
+  width: 17.1875rem;
+  height: 28.125rem;
+  padding-left: 2.8125rem;
 }
 .flex-box:nth-child(3) {
   background-color: var(--background-color-card-three);
-  width: 275px;
-  height: 450px;
-  padding-left: 45px;
+  width: 17.1875rem;
+  height: 28.125rem;
+  padding-left: 2.8125rem;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
@@ -55,7 +55,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 45px;
+  padding-top: 2.8125rem;
 }
 
 .button-one {
@@ -70,10 +70,10 @@ html {
   color: var(--background-color-card-three);
 }
 .flex-icons > button {
-  height: 45px;
-  width: 135px;
-  margin-top: 30px;
-  border-radius: 20px;
+  height: 2.8125rem;
+  width: 8.4375rem;
+  margin-top: 1.875rem;
+  border-radius: 1.25rem;
   font-family: "Lexend Deca", sans-serif;
   font-size: 1em;
   font-weight: 500;
@@ -81,7 +81,7 @@ html {
   outline: none;
   border-color: transparent;
   position: relative;
-  top: 40px;
+  top: 2.5rem;
 }
 
 .flex-icons > button:active {
@@ -92,21 +92,21 @@ p {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   line-height: 1.6em;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
   position: relative;
-  top: 35px;
-  padding-right: 34px;
+  top: 2.1875rem;
+  padding-right: 2.125rem;
 }
 
 h1 {
   font-family: "Big Shoulders Display", cursive;
   font-style: normal;
   font-weight: 500;
-  margin-top: 35px;
-  font-size: 35px;
+  margin-top: 2.1875rem;
+  font-size: 2.1875rem;
 }
 
-@media screen and (max-width: 642px) {
+@media screen and (max-width: 720px) {
   .flexbox-container {
     display: flex;
     flex-direction: column;
